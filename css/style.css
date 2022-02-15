@@ -1,0 +1,303 @@
+body{
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+	justify-content: center;
+	background-color: rgba(0,0,255,0.07);
+	padding-bottom: 7%;
+}
+
+
+/*NAV*/
+header{
+	border: 2px solid black;
+	width: 100%;
+	top:0;
+	position: fixed;
+	font-size: 1em;
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.backColor{
+	background-color: #02194E;
+	color: white;
+	font-style: italic;
+}
+
+
+/*MAIN*/
+main{
+	margin-top: 5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ol{
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: 1fr;
+	justify-content: flex-end;
+}
+
+ul{
+	list-style-type: none;
+	list-style-position: inside;
+	margin: 0;
+	padding: 0;
+}
+
+ol li,ol i{
+	list-style: none;
+	font-size: 1.2em;
+	width: 100%;
+	overflow: auto;
+}
+
+ol li{
+	text-align: justify;
+	grid-column: 1/7;
+	margin: auto;
+}
+
+.busqueda{
+	display: flex;
+	flex-wrap: wrap;
+	gap:10px;
+	justify-content: center;
+	width: 100%;
+}
+
+.imgCarrito{
+	width: 200px;
+	height: 100px;
+}
+.btn{
+	border-color: #AA8E52;
+	padding: 10px;
+	background: #AA8E39;
+	border-width: 4px;
+	border-radius: 20px;
+	font-family:Verdana,Helvetica;
+	font-style: italic;
+	opacity: 0.9;
+}
+
+.btnBorrar:hover{
+	background-color:rgba(255,0,0,0.7);
+}
+
+.btnEnviar:hover{
+	background-color:rgba(0,255,0,0.5);
+}
+
+
+.cmpDato{
+	border-color: blue;
+	border-radius: 20px;
+	padding: 10px;
+	border-width: 4px;
+	font-style: italic;
+}
+
+.error{
+	font-size: 1.2em;
+	color: red;
+	justify-content: center;
+}
+
+
+.box{
+	border: 4px solid black;
+	width: 450px;
+	box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+             background-color: white;
+}
+
+
+.container-principal{
+	display: grid;
+	grid-template-columns: repeat(8,1fr);
+	justify-content: center;
+	align-items: center;
+	justify-content: flex-start;
+	align-items: center;
+	width: 85%;
+	margin: auto;
+	margin-top: 1em;
+	padding: 0.5em;
+}
+.form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bi-cash-coin{
+	grid-column: 7/8;
+	cursor: pointer;
+	margin: auto;
+}
+
+.bi-trash{
+	grid-column: 8/9;
+	cursor: pointer;
+}
+
+#check{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin-left: 1em;
+}
+
+.cmpMonto{
+	border-radius: 20px 20px;
+	padding: 5px;
+	border-color: rgba(0,0,255,0.7);
+}
+
+
+/*FOOTER*/
+footer{
+	border: 2px solid black;
+	width: 100%;
+	bottom: 0px;
+	font-size: 0.7em;
+	position: fixed;
+}
+.position-rel{
+	position: relative;
+}
+.position-absol{
+	position: absolute;
+}
+.red{
+	border-color: red;
+}
+.blue{
+	border-color: blue;
+}
+
+.line-throughItem{
+	text-decoration: line-through;
+	color: red;
+}
+
+.mt-5{
+	margin-top: 5em;
+}
+.mt-4{
+	margin-top: 4em;
+}
+.mt-3{
+	margin-top: 3em;
+}
+.mt-2{
+	margin-top: 2em;
+}
+.mt-1{
+	margin-top: 1em;
+}
+
+.btnBorrar{
+	padding-left: 2em;
+	padding-right: 2em;
+	margin-bottom: 1em;
+}
+
+#presupuesto{
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+#presupuesto:link, #presupuesto:active {
+    text-decoration:none;
+}
+
+#presupuesto:visited{
+	text-decoration: none;
+}
+
+.seccion{
+	margin-top: 1em;
+}
+
+#montoTotal{
+	color: blue;
+	font-weight: bolder;
+}
+
+.container{
+	margin: 0;
+	padding: 0;
+}
+
+.modal{
+	border: 2px solid black;
+	background-color: rgba(2, 25, 78,0.85);
+	display: grid;
+	grid-template-columns: 1fr;
+	margin-top: 0vh;
+	padding: 5px;
+	border-radius: 20px 20px;
+	z-index: 100;
+	justify-content: center;
+	align-items: center;
+	margin-left: 120px;
+}
+
+.modal-text{
+	font-size: 1em;
+	height: 0.3em;
+	font-weight: bold;
+	margin-top: 0;
+	padding: 5px;
+	color: white;
+}
+.btnCerrar{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+#inputProductPrice{
+	border-radius: 5px;
+	padding: 5px;
+	width: 100px;
+	margin:auto;
+}
+
+#btnProductPrice{
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	justify-content: flex-end;
+	margin-top: 10px;
+}
+
+.form {
+  animation-duration: 1s;
+  animation-name:;
+  z-index: 100; 
+}
+
+@keyframes up{
+  from {
+    margin-top: -50px;
+    height:  150%
+  }
+
+  to {
+    margin-top: 0%;
+    height:  100%;
+  }
+}
+
